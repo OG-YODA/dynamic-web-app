@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Register</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/c78703c042.js" crossorigin="anonymous"></script>
+  <style>
+    @font-face { 
+      font-family: Futura Display; 
+      src: url(/assets/fonts/FuturaDisplay.ttf); 
+    } 
+ 
+    html, body { 
+      margin: 0; 
+      padding: 0; 
+      border: 0; 
+      font-size: 100%; 
+      font: inherit; 
+      vertical-align: baseline; 
+      height: 100%;
+    } 
+ 
+    body { 
+      font-family: Futura Display; 
+      letter-spacing: .1rem; 
+      background-color: #000; 
+      color: #D0E0F0; 
+      text-align: center; 
+      line-height: 1; 
+      margin-left: 10%;
+      margin-right: 10%;
+      padding: 0; 
+      display: flex; 
+      flex-direction: column; 
+      min-height: 100vh;
+    }
+
+    header, main {
+      flex: 1;
+    }
+
+    footer { 
+      font-size: 9px; 
+      align-self: center; 
+      padding: 1%; 
+      position: relative; 
+      bottom: 0; 
+      width: 100%; 
+      background-color: rgba(0, 0, 0, 0.8);
+      color: #fff; 
+      flex-shrink: 0;
+    } 
+ 
+    header { 
+      display: flex; 
+      flex-direction: row; 
+      flex-wrap: nowrap; 
+      justify-content: flex-start; 
+      align-items: flex-start; 
+      align-content: flex-start; 
+    } 
+ 
+    .socials { 
+      width: auto; 
+      padding-top: 8px; 
+      margin-bottom: 15px; 
+      margin-left: 1%; 
+    } 
+ 
+    .socials a { 
+      font-size: 20px; 
+    } 
+ 
+    .main { 
+      width: auto; 
+      align-self: auto; 
+      order: 1; 
+      margin-right: 10px; 
+      padding-top: 10px; 
+    } 
+ 
+    .outer { 
+      align-self: flex-end; 
+      flex-grow: 1; 
+      flex-basis: auto; 
+      margin: auto; 
+      flex-shrink: 1; 
+    } 
+ 
+    .outer h1 { 
+      font-size: 80px; 
+      margin-top: 20px;
+      margin-bottom: 10px;
+    } 
+
+    .outer h2 { 
+      font-size: 30px; 
+      margin-top: 5px;
+    } 
+ 
+    a { 
+      color: #D0E0F0; 
+      text-decoration: none; 
+      transition: color 0.3s; 
+    } 
+ 
+    a:hover { 
+      color: #ffffff; 
+    }
+
+    #reg{
+        margin-top: 10px;
+        font-size: 40px;
+    }
+
+    label{
+        font-size: 20px;
+    }
+
+    button { 
+        margin-top: 10%;
+        background-color: #D0E0F0; 
+        color: #000; 
+        font-family: inherit; 
+        font-size: 2rem;
+        border: 2px solid #D0E0F0; 
+        padding: 7px 10px; 
+        transition: all 0.3s; 
+        line-height: 110%; 
+        margin: 0 10px; 
+    } 
+ 
+    button:hover { 
+        background-color: #000; 
+        color: #D0E0F0; 
+    }
+
+    input{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    form {
+        max-width: 30%;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        width: 150px;
+        text-align: left;
+        margin-right: 20px;
+    }
+
+    .form-group input {
+        flex: 1;
+        background-color: #D0E0F0; 
+        color: #000; 
+        font-family: Arial, Helvetica, sans-serif; 
+        font-size: 1rem;
+        border: 2px solid #D0E0F0; 
+        padding: 3px 5px; 
+        transition: all 0.3s; 
+    }
+
+    .form-group input:hover{
+        background-color: #000; 
+        color: #D0E0F0; 
+    }
+
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="socials">
+            <a href="https://itunes.apple.com/artist/lana-del-rey/id464296584">
+                <i class="fa fa-apple"></i>
+            </a>
+            <a href="https://open.spotify.com/artist/00FQb4jTyendYWaN8pK0wa?play=true&utm_source=open.spotify.com&utm_medium=open">
+                <i class="fa fa-spotify"></i>
+            </a>
+            <a href="https://www.facebook.com/lanadelrey">
+                <i class="fa fa-facebook"></i>
+            </a>
+            <a href="https://www.youtube.com/lanadelrey">
+                <i class="fa fa-youtube"></i>
+            </a>
+            <a href="https://www.instagram.com/honeymoon/">
+                <i class="fa fa-instagram"></i>
+            </a>
+            <a href="https://www.tiktok.com/@lanadelrey">
+                <i class="fa-brands fa-tiktok"></i>
+            </a>
+        </nav>
+        <nav class="main">
+            <a>LIVE DATES</a>
+            <a href="/">HOME</a>
+        </nav>
+        <nav class="outer">
+            <h1>Lana Del Ray</h1>
+            <h2>New Album Out Now</h2>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="reg">Sign Up</h1>
+        <form action="/register" method="post">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Sign me up!</button>
+            <p><a href="/login">Already have an account?</a></p>
+        </form>
+    </main>
+
+    <footer>
+        <a>© 2024 ALL RIGHTS RESERVED</a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,199 @@
+@font-face { 
+    font-family: Futura Display; 
+    src: url(/assets/fonts/FuturaDisplay.ttf); 
+} 
+ 
+html, body { 
+    margin: 0; 
+    padding: 0; 
+    border: 0; 
+    font-size: 100%; 
+    font: inherit; 
+    vertical-align: baseline; 
+    height: 100%;
+} 
+ 
+body { 
+    font-family: Futura Display; 
+    letter-spacing: .1rem; 
+    background-color: #000; 
+    color: #D0E0F0; 
+    text-align: center; 
+    line-height: 1; 
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100%; 
+} 
+ 
+#container { 
+    flex: 1 0 auto;
+} 
+ 
+.content { 
+    flex: 1 0 auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    min-height: 100%;
+} 
+ 
+ 
+footer { 
+    font-size: 9px; 
+    align-self: center; 
+    padding: 1%; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff; 
+} 
+ 
+header { 
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: nowrap; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    align-content: flex-start; 
+} 
+ 
+.socials { 
+    width: auto; 
+    padding-top: 8px; 
+    margin-bottom: 15px; 
+    margin-left: 1%; 
+} 
+ 
+.socials a { 
+    font-size: 20px; 
+} 
+ 
+.main { 
+    width: auto; 
+    align-self: auto; 
+    order: 1; 
+    margin-right: 10px; 
+    padding-top: 10px; 
+} 
+ 
+.outer { 
+    align-self: flex-end; 
+    flex-grow: 1; 
+    flex-basis: auto; 
+    margin: auto; 
+    flex-shrink: 1; 
+} 
+ 
+.outer h1 { 
+    padding-top: 10px; 
+    font-size: 50px; 
+    padding-bottom: 10px; 
+} 
+ 
+h1 { 
+    margin-bottom: 0px; 
+    font-size: large; 
+} 
+ 
+h2 { 
+    margin-bottom: 5%; 
+} 
+ 
+a { 
+    color: #D0E0F0; 
+    text-decoration: none; 
+    transition: color 0.3s; 
+} 
+ 
+a:hover { 
+    color: #ffffff; 
+} 
+
+.gallery{
+    position: relative;
+    flex: 1; 
+    margin: 0 auto; 
+    width: 60%; 
+}
+ 
+.order { 
+    position: relative;
+    flex: 1; 
+    margin: 0 auto; 
+    width: 60%; 
+} 
+ 
+.buttons { 
+    margin-top: 10px; 
+    text-align: center; 
+    width: 100%; 
+} 
+ 
+button { 
+    background-color: #D0E0F0; 
+    color: #000; 
+    font-family: inherit; 
+    border: 2px solid #D0E0F0; 
+    padding: 7px 10px; 
+    transition: all 0.3s; 
+    font-size: 1rem; 
+    line-height: 110%; 
+    margin: 0 10px; 
+} 
+ 
+button:hover { 
+    background-color: #000; 
+    color: #D0E0F0; 
+}
+ 
+.carousel__image { 
+    width: 100%; 
+    height: auto; 
+    opacity: 0; 
+    transition: opacity 1s ease-in-out; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin-bottom: 5%;
+} 
+ 
+.carousel__image.active { 
+    opacity: 1; 
+} 
+ 
+#navigation-list { 
+    text-align: start; 
+    font-size: 1.25rem; 
+    margin-left: 3%; 
+    margin-top: 3%; 
+    margin-bottom: 3%; 
+} 
+ 
+.article { 
+    text-align: justify; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    color: #ffffff; 
+    margin-left: 5%; 
+    margin-right: 5%; 
+    line-height: normal; 
+} 
+ 
+.article h2 { 
+    text-align: center; 
+    margin-left: auto; 
+    margin-top: 5%; 
+} 
+ 
+.article h3 { 
+    margin-left: 4%; 
+    margin-top: 5%; 
+    margin-bottom: 5%; 
+} 
+ 
+p { 
+    text-indent: 20px; 
+}
